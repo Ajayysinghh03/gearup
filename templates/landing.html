@@ -1,0 +1,180 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GearUp Bikers' Club - Bhopal</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Roboto:400,500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="{% static 'css/landing.css' %}">
+    <link rel="icon" href="{% static 'img/logo.png' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="{% static 'img/logo.png' %}" alt="GearUp" class="nav-logo-img">
+                <span class="nav-logo-text">GearUp</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#rides" class="nav-link">Events</a></li>
+                <li><a href="#riders" class="nav-link">Top Riders</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#join" class="nav-link nav-cta">Join Us</a></li>
+                <li><a href="#login" class="nav-link nav-login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" style="background-image: url('{% static 'img/hero-bg.jpg' %}');">
+        <div class="overlay"></div>
+        <div class="hero-content" data-aos="fade-up">
+            <img src="{% static 'img/logo.png' %}" alt="GearUp Logo" class="logo">
+            <h1>Ride Together. <span class="highlight">GearUp Forever.</span></h1>
+            <p class="tagline">Bhopal's Premier Bikers' Club</p>
+            <a href="#join" class="cta-btn" data-aos="zoom-in" data-aos-delay="300">Join the Club</a>
+        </div>
+    </section>
+
+    <!-- Club Introduction -->
+    <section class="intro section" id="about" data-aos="fade-right">
+        <div class="container">
+            <h2>Welcome to GearUp</h2>
+            <p>GearUp is a passionate community of motorcycle enthusiasts based in Bhopal. We unite riders from all walks of life to share the thrill of the open road, organize epic rides, and foster lifelong friendships. Whether you're a seasoned biker or just starting out, GearUp is your home for adventure and camaraderie.</p>
+        </div>
+    </section>
+
+    <!-- Upcoming Rides -->
+    <section class="rides section" id="rides" data-aos="fade-up">
+        <div class="container">
+            <h2>Upcoming Rides</h2>
+            <div class="rides-cards">
+                <div class="ride-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div width="100%" height="100%" class="ride-img" style="background-image: url('{% static 'img/ride1.jpg' %}');"></div>
+                    <h3>Bhopal Lake Sprint</h3>
+                    <p>Sunday, 10th Aug | 7:00 AM</p>
+                </div>
+                <div class="ride-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="ride-img" style="background-image: url('{% static 'img/ride2.jpg' %}');"></div>
+                    <h3>Satpura Adventure</h3>
+                    <p>Saturday, 23rd Aug | 6:00 AM</p>
+                </div>
+                <div class="ride-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="ride-img" style="background-image: url('{% static 'img/ride3.jpg' %}');"></div>
+                    <h3>Night City Cruise</h3>
+                    <p>Friday, 5th Sep | 8:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Riders Section -->
+    <section class="riders section" id="riders" data-aos="fade-left">
+        <div class="container">
+            <h2>Top Riders</h2>
+            <div class="riders-grid">
+                <div class="rider-card" data-aos="flip-up" data-aos-delay="100">
+                    <div class="rider-avatar" style="background-image: url('{% static 'img/rider1.jpg' %}');"></div>
+                    <h3>Ridham Jain</h3>
+                    <p class="rider-title">Club Captain</p>
+                    <p class="rider-stats">15,000+ km | 50+ rides</p>
+                </div>
+                <div class="rider-card" data-aos="flip-up" data-aos-delay="200">
+                    <div class="rider-avatar" style="background-image: url('{% static 'img/rider2.jpg' %}');"></div>
+                    <h3>Disha Jain</h3>
+                    <p class="rider-title">Adventure Lead</p>
+                    <p class="rider-stats">12,000+ km | 45+ rides</p>
+                </div>
+                <div class="rider-card" data-aos="flip-up" data-aos-delay="300">
+                    <div class="rider-avatar" style="background-image: url('{% static 'img/rider3.jpg' %}');"></div>
+                    <h3>Vikram Patel</h3>
+                    <p class="rider-title">Safety Officer</p>
+                    <p class="rider-stats">18,000+ km | 60+ rides</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section" id="gallery" data-aos="fade-up">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-img" style="background-image: url('{% static 'img/gallery1.jpg' %}');"></div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-img" style="background-image: url('{% static 'img/gallery2.jpg' %}');"></div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-img" style="background-image: url('{% static 'img/gallery3.jpg' %}');"></div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="gallery-img" style="background-image: url('{% static 'img/gallery4.jpg' %}');"></div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="gallery-img" style="background-image: url('{% static 'img/gallery5.jpg' %}');"></div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-img" style="background-image: url('{% static 'img/gallery6.jpg' %}');"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Join Us -->
+    <section class="why-join section" id="why" data-aos="fade-left">
+        <div class="container">
+            <h2>Why Join GearUp?</h2>
+            <div class="why-points">
+                <div class="point" data-aos="flip-left" data-aos-delay="100">
+                    <span class="icon">🏍️</span>
+                    <h4>Epic Rides</h4>
+                    <p>Regularly organized rides to scenic destinations and hidden gems.</p>
+                </div>
+                <div class="point" data-aos="flip-left" data-aos-delay="200">
+                    <span class="icon">🤝</span>
+                    <h4>Brotherhood</h4>
+                    <p>Meet like-minded bikers and build lasting friendships.</p>
+                </div>
+                <div class="point" data-aos="flip-left" data-aos-delay="300">
+                    <span class="icon">🛠️</span>
+                    <h4>Workshops</h4>
+                    <p>Learn bike maintenance, safety, and riding skills from experts.</p>
+                </div>
+                <div class="point" data-aos="flip-left" data-aos-delay="400">
+                    <span class="icon">🎉</span>
+                    <h4>Events & Fun</h4>
+                    <p>Participate in club events, parties, and community service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="footer" id="join" data-aos="fade-up">
+        <div class="container">
+            <p>Connect with us: gearupclub.bhopal@email.com </p>
+            <a href="https://www.instagram.com/gearupcreatorclub" target="_blank" style="text-decoration: none; color: inherit;">
+                <i class="fab fa-instagram"></i> @gearupcreatorclub
+            </a>
+            <p>&copy; 2024 GearUp Bhopal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="{% static 'js/landing.js' %}"></script>
+    <script>
+      AOS.init({
+        duration: 900,
+        once: true
+      });
+    </script>
+</body>
+</html>
